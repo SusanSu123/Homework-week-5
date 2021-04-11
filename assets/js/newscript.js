@@ -4,36 +4,13 @@ $(document).ready(function() {
     $('#currentDay').text(currentDay) 
 
 
-    var saveBth = $('.save-btn')
-    saveBth.on('click', function(){
+    var saveBtn = $('.save-btn')
+    saveBtn.on('click', function(){
 
         var task = $(this).siblings('.events').val()
         var time = $(this).siblings('.events').attr('id')
         localStorage.setItem(time, task)
     })
-
-
-    function timeCheck() {
-        var currentTime = moment().hour();
-        $(".hour").each(function(){
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-
-            if (blockTime < currentTime) {
-                $(this).removeClass("future");
-                $(this).removeClass("present");
-                $(this).addClass("past");
-            } else if (blockTime == currentTime) {
-                $(this).removeClass("future");
-                $(this).removeClass("past");
-                $(this).addClass("present"); 
-            } else if (blockTime > currentTime) {
-                $(this).removeClass("present");
-                $(this).removeClass("past");
-                $(this).addClass("future");
-            }
-
-        })
-    }
 
 
     $('#9AM').val(localStorage.getItem('9AM'))
@@ -46,9 +23,32 @@ $(document).ready(function() {
     $('#16PM').val(localStorage.getItem('16PM'))
     $('#17PM').val(localStorage.getItem('17PM'))
 
-    timeCheck();
 
-})
+    function timeCheck() {
+        var currentTime = moment().hour();
+        $('.hour').each(function(){
+            var blockTime = $(this).attr('id').split("hour")[1]);
+
+            if (blockTime < currentTime) {
+                $(this).siblings('.events').removeClass("future");
+                $(this).siblings('.events').removeClass("present");
+                $(this).siblings('.events').addClass("past");
+            } else if (time == currentTime) {
+                $(this).siblings('.events').removeClass("future");
+                $(this).siblings('.events').removeClass("past");
+                $(this).siblings('.events').addClass("present"); 
+            } else if (time > currentTime) {
+                $(this).siblings('.events').removeClass("present");
+                $(this).siblings('.events').removeClass("past");
+                $(this).siblings('.events').addClass("future");
+            }
+
+        })
+    )
+
+    })
+
+    timeCheck();
 
 
 
