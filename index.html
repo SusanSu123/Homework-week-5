@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
+        crossorigin="anonymous"/>
+
+  <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        rel="stylesheet" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <title>Work Day Scheduler</title>
+</head>
+
 
   <body>
     <header class="jumbotron">
@@ -31,10 +24,67 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+        <label for="9AM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour9">9 AM</label>
+        <textarea id="9AM" name="9AM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+
+      <div class="row">
+        <label for="10AM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour10">10 AM</label>
+        <textarea id="10AM" name="10AM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="11AM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour11">11 AM</label>
+        <textarea id="11AM" name="11AM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="12PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour12">12 AM</label>
+        <textarea id="12PM" name="12PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <label for="13PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour13">13 PM</label>
+        <textarea id="13PM" name="13PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="14PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour14">14 PM</label>
+        <textarea id="14PM" name="14PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="15PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour15">15 PM</label>
+        <textarea id="15PM" name="15PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="16PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour16">16 PM</label>
+        <textarea id="16PM" name="16PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div class="row">
+        <label for="17PM" class=" hour col-xl-1 col-md-2 col-sm-3" id="hour17">17 PM</label>
+        <textarea id="17PM" name="17PM" class="events col-xl-10 col-md-8 col-sm-6" ></textarea>
+        <button class="btn save-btn col-md-1"><i class="fas fa-save"></i></button>
+      </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="assets/js/script.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/newscript.js"></script>  
+
 </body>
 </html>
