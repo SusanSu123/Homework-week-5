@@ -23,34 +23,35 @@ $(document).ready(function() {
     $('#16PM').val(localStorage.getItem('16PM'))
     $('#17PM').val(localStorage.getItem('17PM'))
 
+    console.log($(this));
+
 
     function timeCheck() {
         var currentTime = moment().hour();
         $('.hour').each(function(){
-            var blockTime = $(this).attr('id').split("hour")[1]);
-
+            var blockTime = $(this).attr('id').split("hour")[1];
+            console.log(currentTime);
+            console.log(blockTime);
+            console.log($(this));
+    
+ 
             if (blockTime < currentTime) {
                 $(this).siblings('.events').removeClass("future");
                 $(this).siblings('.events').removeClass("present");
                 $(this).siblings('.events').addClass("past");
-            } else if (time == currentTime) {
+            } else if (blockTime == currentTime) {
                 $(this).siblings('.events').removeClass("future");
                 $(this).siblings('.events').removeClass("past");
                 $(this).siblings('.events').addClass("present"); 
-            } else if (time > currentTime) {
+            } else if (blockTime > currentTime) {
                 $(this).siblings('.events').removeClass("present");
                 $(this).siblings('.events').removeClass("past");
                 $(this).siblings('.events').addClass("future");
             }
 
         })
-    )
 
-    })
+    }
 
     timeCheck();
-
-
-
-
-    
+})
