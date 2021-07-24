@@ -2,14 +2,14 @@
 The purpose of the this project is to use BootStrap, jQuery and moment.js to create a Work Day Scheduler.
 
 ## How to install
-<ul> Clone the repository</ul>
-<ul>Git clone https://github.com/SusanSu123/Third-Party-APIs-Work-Day-Scheduler.git</ul>
-<ul> Go to index.html</ul>
-<ul>Open with your favarite browser</ul>
+* Clone the repository
+* Git clone https://github.com/SusanSu123/Third-Party-APIs-Work-Day-Scheduler.git
+* Go to index.html
+* Open with your favarite browser
 
 ## Implementatin Details
 
-<ul>Built with HTML, CSS, Bootstrap, jQuery, Moment.js</ul>
+Built with HTML, CSS, Bootstrap, jQuery, Moment.js
 
 ## User Story
 
