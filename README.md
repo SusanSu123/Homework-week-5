@@ -1,23 +1,15 @@
 ## Ovderview
 The purpose of the this project is to use BootStrap, jQuery and moment.js to create a Work Day Scheduler.
 
-<br>
-<br>
-
 ## How to install
 <ul> Clone the repository</ul>
-<ul>Git clone https://github.com/SusanSu123/Homework-week-5.git</ul>
+<ul>Git clone https://github.com/SusanSu123/Third-Party-APIs-Work-Day-Scheduler.git</ul>
 <ul> Go to index.html</ul>
 <ul>Open with your favarite browser</ul>
-
-<br>
 
 ## Implementatin Details
 
 <ul>Built with HTML, CSS, Bootstrap, jQuery, Moment.js</ul>
-
-<br>
-<br>
 
 ## User Story
 
