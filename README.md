@@ -1,5 +1,3 @@
-# Homework-week-5 Third-Party APIs: Work Day Scheduler
-
 ## Ovderview
 The purpose of the this project is to use BootStrap, jQuery and moment.js to create a Work Day Scheduler.
 
